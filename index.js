@@ -13,6 +13,21 @@ const server = app.listen(port);
 
 
 app.use(express.static('public', {index: 'host.html'}));
+app.use(function (req, res, next) {
+    if(!checkFunction(req.url)) {
+        next();
+    } else {
+        res.send(404, "Not found");
+    }
+}
+
+var checkFunction(url){
+   var blockedUrl = ['node_modules', 'public/index.js', 'public/index.php' 'public/index.html', 'public/style.css', 'public/tempest.mp3', 'index.js'];
+
+   return blockedUrl.find(function(urlCheck){
+        return urlCheck === url;
+   })
+}
 //console.log("My socket server is running on port " + port);
 
 ////////////
