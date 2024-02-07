@@ -19,7 +19,7 @@ Run http-server -c-1 -p80 to start server on open port 80.
 
 
 
-const serverIp = 'https://minekeeper.palindromicsodium.repl.co/';
+const serverIp = 'https://minekeeper.onrender.com/';
 const serverPort = '8080';
 const local = false;   // true if running locally, false
 // if running on remote server
