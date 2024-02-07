@@ -12,7 +12,7 @@ const port = 3000;
 const server = app.listen(port);
 
 
-app.use(express.static('public'));
+app.use(express.static('public', {index: 'host.html'}));
 //console.log("My socket server is running on port " + port);
 
 ////////////
