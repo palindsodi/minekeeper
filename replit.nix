@@ -1,0 +1,10 @@
+{ pkgs }: {
+  deps = [
+    pkgs.vimPlugins.coc-haxe
+    pkgs.nodejs-16_x
+    pkgs.sudo
+    pkgs.nodejs-16_x
+    pkgs.nodePackages.vscode-langservers-extracted
+    pkgs.nodePackages.typescript-language-server
+  ];
+}

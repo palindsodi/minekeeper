@@ -1,0 +1,41 @@
+{
+  "name": "get-res",
+  "version": "3.0.0",
+  "description": "Get ten most popular screen resolutions",
+  "license": "MIT",
+  "repository": "kevva/get-res",
+  "author": {
+    "name": "Kevin Mårtensson",
+    "email": "kevinmartensson@gmail.com",
+    "url": "https://github.com/kevva"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": {
+    "get-res": "cli.js"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "keywords": [
+    "resolution",
+    "screen",
+    "size"
+  ],
+  "dependencies": {
+    "meow": "^3.3.0",
+    "w3counter": "^3.0.1"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
