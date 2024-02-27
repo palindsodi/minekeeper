@@ -154,6 +154,6 @@ function _displayInstructions() {
     fill(0);
     textAlign(CENTER, CENTER);
     textSize(20);
-    text("Looks like you're at the wrong page.\nGo to\nminekeeper.palindromicsodium.repl.co/host.html\nto host a room and get started.\nIgnore the stuff below :P", width/2, height/2-200);
+    text("Looks like you're at the wrong page.\nGo to\nminekeeper.onrender.com/host.html\nto host a room and get started.\nIgnore the stuff below :P", width/2, height/2-200);
   pop();
 }
